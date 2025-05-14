@@ -1,0 +1,61 @@
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('./bananas-in-pyjamas.png');
+    background-color: rgb(218, 203, 203);
+  }
+  
+  .game-question {
+    margin-bottom: 20px;
+    
+  }
+  
+  .game-info {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .game-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .game-buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+  }
+  
+  .game-question img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Game.css */
+
+@keyframes pop-up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.correct-feedback {
+  animation: pop-up 0.5s ease-out;
+  color: #00cc00; /* Green color for correct feedback */
+  font-weight: bold;
+}
